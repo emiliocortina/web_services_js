@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Paris</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="active">Home</li>
+            <li><a href="#">Museums</a></li>
+            <li><a href="#">Restaurants</a></li>
+        </ul>
+    </nav>
+
+    <h1>Discover Paris</h1>
+
+    <div class="content">
+        <h2>Explore Paris</h2>
+        <p>Cover image changes automatically based on the current Paris weather and time of the day,
+            but you can change it manually with these buttons:
+        </p>
+        <div id="dayButtons">
+            <h3>Paris de dia</h3>
+            <button onclick="meteo.changeCover('01d')">Clear</button>
+            <button onclick="meteo.changeCover('02d')">Cloudy</button>
+            <button onclick="meteo.changeCover('09d')">Rainy</button>
+        </div>
+
+        <div id="nightButtons">
+            <h3>Paris de noche</h3>
+            <button onclick="meteo.changeCover('01n')">Clear</button>
+            <button onclick="meteo.changeCover('02n')">Cloudy</button>
+            <button onclick="meteo.changeCover('09n')">Rainy</button>
+        </div>
+    </div>
+
+    <div class="content" id="wiki_container">
+        <h2>Wikipedia</h2>
+    </div>
+
+    <div class="content" id="imagenes">
+        <h2>Last images from paris in Flickr</h2>
+    </div>
+
+    <div class="content" id="moneyExchanger">
+        <h2>Currency exchange.</h2>
+        Introduce the amount in € to exchange:
+        <input type="text" name="eurInput" id="eurAmountField">
+        <button onclick="exchanger.cargarDatos()">Press to exchange</button>
+    </div>
+
+
+
+   
+
+    <footer>
+        <script src="script.js"></script>
+    </footer>
+</body>
+
+</html>
